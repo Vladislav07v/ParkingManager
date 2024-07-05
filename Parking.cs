@@ -39,5 +39,19 @@ namespace ConsoleApp2
             AvaliableSpaces = avaliableSpaces;
             Vehicles = vehicles;
         }
+        public override string ToString()
+        {
+            return $"{ParkingID},{Location},{int.Parse(TotalSpaces)},{int.Parse(AvaliableSpaces)},{Vehicles}";
+        }
+        public void DecreaseSeats(int ticketsCount)
+        {
+            if (AvaliableSpaces < TotalSpaces)
+            {
+                Console.WriteLine("Няма толкова налични места.");
+                return;
+            }
+            AvaliableSpaces -= TotalSpaces;
+            //todo: message to be print
+        }
     }
 }
