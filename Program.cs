@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,11 +11,12 @@ namespace ConsoleApp2
     {
         private const string filePath = "../../../parking.txt";
 
-        private static List<Parking> flights = new List<Parking>();
+        private static List<Parking> parkings = new List<Parking>();
         private static string menuActionChoice;
         static void Main(string[] args)
         {
             PrintMenu();
+
             while (true)
             {
                 menuActionChoice = Console.ReadLine();
@@ -28,7 +30,7 @@ namespace ConsoleApp2
                         ParkingLocation();
                         break;
                     case "3":
-                        TotalSpacest();
+                        TotalSpaces();
                         break;
                     case "4":
                         AvaliableSpaces();
@@ -36,7 +38,7 @@ namespace ConsoleApp2
                     case "5":
                         Vehicles();
                         break;
-                    case "x" or "X":
+                    case "x" || "X":
                         Exit();
                         break;
                     default:
@@ -61,7 +63,7 @@ namespace ConsoleApp2
             throw new NotImplementedException();
         }
 
-        private static void TotalSpacest()
+        private static void TotalSpaces()
         {
             throw new NotImplementedException();
         }
@@ -76,9 +78,38 @@ namespace ConsoleApp2
             throw new NotImplementedException();
         }
 
-        private static void ShowActionTitle(string v)
+        private static void SaveParkings()
         {
-            throw new NotImplementedException();
+            StreamWriter writer = new StreamWriter(filePath, false, Encoding.Unicode);
+            using (writer)
+            {
+                foreach (Parking parking in parkings)
+                {
+                    writer.WriteLine(parking);
+                }
+            }
+        }
+
+        private static void LoadParkings()
+        {
+            StreamReader reader = new StreamReader(filePath, Encoding.Unicode);
+            using (reader)
+            {
+                string line;
+                while ((line = Console.ReadLine()) != null)
+                {
+                    string[] flightInfo = line.Split(',').ToArray();
+                    string flightId = flightInfo[0];
+                    string destination = flightInfo[1];
+                    DateTime departureTime = Convert.ToDateTime(flightInfo[2]);
+                    DateTime arrivalTime = Convert.ToDateTime(flightInfo[3]);
+                    int seatsAvailable = int.Parse(flightInfo[4]);
+                    decimal price = decimal.Parse(flightInfo[5]);
+
+                    Parking currentFlight = new Parking(parkingId, location, totalSpaces, avaliableSpaces, vehicles);
+                    parkings.Add(currentParking);
+                }
+            }
         }
     }
 }
