@@ -25,3 +25,17 @@ C:\Praktika\Proekt\obj\Debug\net8.0\refint\ParkingManagementSystrem.dll
 C:\Praktika\Proekt\obj\Debug\net8.0\ParkingManagementSystrem.pdb
 C:\Praktika\Proekt\obj\Debug\net8.0\ParkingManagementSystrem.genruntimeconfig.cache
 C:\Praktika\Proekt\obj\Debug\net8.0\ref\ParkingManagementSystrem.dll
+D:\Other thingies\Programy Thingies\ParkingManagementSystem\bin\Debug\net8.0\ParkingManagementSystrem.exe
+D:\Other thingies\Programy Thingies\ParkingManagementSystem\bin\Debug\net8.0\ParkingManagementSystrem.dll.config
+D:\Other thingies\Programy Thingies\ParkingManagementSystem\bin\Debug\net8.0\ParkingManagementSystrem.deps.json
+D:\Other thingies\Programy Thingies\ParkingManagementSystem\bin\Debug\net8.0\ParkingManagementSystrem.runtimeconfig.json
+D:\Other thingies\Programy Thingies\ParkingManagementSystem\bin\Debug\net8.0\ParkingManagementSystrem.dll
+D:\Other thingies\Programy Thingies\ParkingManagementSystem\bin\Debug\net8.0\ParkingManagementSystrem.pdb
+D:\Other thingies\Programy Thingies\ParkingManagementSystem\obj\Debug\net8.0\ParkingManagementSystrem.GeneratedMSBuildEditorConfig.editorconfig
+D:\Other thingies\Programy Thingies\ParkingManagementSystem\obj\Debug\net8.0\ParkingManagementSystrem.csproj.CoreCompileInputs.cache
+D:\Other thingies\Programy Thingies\ParkingManagementSystem\obj\Debug\net8.0\ParkingManagementSystrem.sourcelink.json
+D:\Other thingies\Programy Thingies\ParkingManagementSystem\obj\Debug\net8.0\ParkingManagementSystrem.dll
+D:\Other thingies\Programy Thingies\ParkingManagementSystem\obj\Debug\net8.0\refint\ParkingManagementSystrem.dll
+D:\Other thingies\Programy Thingies\ParkingManagementSystem\obj\Debug\net8.0\ParkingManagementSystrem.pdb
+D:\Other thingies\Programy Thingies\ParkingManagementSystem\obj\Debug\net8.0\ParkingManagementSystrem.genruntimeconfig.cache
+D:\Other thingies\Programy Thingies\ParkingManagementSystem\obj\Debug\net8.0\ref\ParkingManagementSystrem.dll

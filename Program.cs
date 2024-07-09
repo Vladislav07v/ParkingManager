@@ -55,8 +55,20 @@ namespace ParkingManagementSystrem
 
         private static void PrintMenu()
         {
-            throw new NotImplementedException();
-            //За Митко
+            Console.Clear();
+
+            AddLine();
+            Console.WriteLine("\tМ Е Н Ю");
+            AddLine();
+            Console.WriteLine("\tИзберете желаното действие:");
+            AddLine();
+            Console.WriteLine("\t[1]: Добавяне на нов паркинг");
+            Console.WriteLine("\t[2]: Регистрация на ново п.с.");
+            Console.WriteLine("\t[3]: Напускане на паркинг от п. с.");
+            Console.WriteLine("\t[4]: Налични паркоместа");
+            Console.WriteLine("\t[x]: Изход от програмата");
+            AddLine();
+            Console.Write("\tВашият избор: ");
         }
 
         private static void ShowActionTitle(string title)
@@ -148,20 +160,27 @@ namespace ParkingManagementSystrem
 
         private static void BackToMenu()
         {
-            throw new NotImplementedException();
-            //За Митко
+            AddLine();
+            Console.Write("\tОбратно към менюто: ");
+            Console.ReadLine();
+            PrintMenu();
         }
 
-        private static void AddLine()
+        private static void AddLine(int count = 1)
         {
-            throw new NotImplementedException();
-            //За Митко
+            for (int i = 0; i < count; i++)
+            {
+                Console.WriteLine(Environment.NewLine);
+            }
         }
 
         private static void PrintParkingInfo(Parking parking)
         {
-            throw new NotImplementedException();
-            //За Митко
+            Console.WriteLine($"\tНомер на полета: {parking.ParkingID}");
+            Console.WriteLine($"\tДо: {parking.Location}");
+            Console.WriteLine($"\tИзлитане: {parking.TotalSpaces.ToString()}");
+            Console.WriteLine($"\tКацане: {parking.AvaliableSpaces.ToString()}");
+            Console.WriteLine($"\tСвободни места: {parking.Vehicles}");
         }
 
         private static void ShowResultMessage(string message)

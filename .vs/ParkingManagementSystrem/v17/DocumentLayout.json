@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Praktika\\Proekt\\",
+  "WorkspaceRootPath": "D:\\Other thingies\\Programy Thingies\\ParkingManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E45462A2-DC41-4D1C-9D3A-666E26207A6D}|ParkingManagementSystrem.csproj|c:\\praktika\\proekt\\parking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E45462A2-DC41-4D1C-9D3A-666E26207A6D}|ParkingManagementSystrem.csproj|solutionrelative:parking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E45462A2-DC41-4D1C-9D3A-666E26207A6D}|ParkingManagementSystrem.csproj|d:\\other thingies\\programy thingies\\parkingmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E45462A2-DC41-4D1C-9D3A-666E26207A6D}|ParkingManagementSystrem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E45462A2-DC41-4D1C-9D3A-666E26207A6D}|ParkingManagementSystrem.csproj|c:\\praktika\\proekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E45462A2-DC41-4D1C-9D3A-666E26207A6D}|ParkingManagementSystrem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E45462A2-DC41-4D1C-9D3A-666E26207A6D}|ParkingManagementSystrem.csproj|d:\\other thingies\\programy thingies\\parkingmanagementsystem\\parking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E45462A2-DC41-4D1C-9D3A-666E26207A6D}|ParkingManagementSystrem.csproj|solutionrelative:parking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Parking.cs",
-              "DocumentMoniker": "C:\\Praktika\\Proekt\\Parking.cs",
+              "DocumentMoniker": "D:\\Other thingies\\Programy Thingies\\ParkingManagementSystem\\Parking.cs",
               "RelativeDocumentMoniker": "Parking.cs",
-              "ToolTip": "C:\\Praktika\\Proekt\\Parking.cs",
+              "ToolTip": "D:\\Other thingies\\Programy Thingies\\ParkingManagementSystem\\Parking.cs",
               "RelativeToolTip": "Parking.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAswAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-09T08:19:17.042Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Praktika\\Proekt\\Program.cs",
+              "DocumentMoniker": "D:\\Other thingies\\Programy Thingies\\ParkingManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Praktika\\Proekt\\Program.cs",
+              "ToolTip": "D:\\Other thingies\\Programy Thingies\\ParkingManagementSystem\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwDwAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-09T08:19:03.18Z",
               "EditorCaption": ""

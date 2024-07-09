@@ -51,7 +51,7 @@ namespace ParkingManagementSystrem
                 return;
             }
             AvaliableSpaces -= TotalSpaces;
-            //todo: message to be print
+            Console.WriteLine("а.");
         }
     }
 }
