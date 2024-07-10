@@ -25,7 +25,7 @@ namespace ParkingManagementSystrem
                 {
                     case "1":
                         ShowActionTitle("Добавяне на нов паркинг");
-                        NewParking();
+                        AddNewParking();
                         break;
                     case "2":
                         ShowActionTitle("Нов идентификационен номер");
@@ -59,7 +59,11 @@ namespace ParkingManagementSystrem
 
         private static void AllParkings()
         {
-            throw new NotImplementedException();
+            foreach (var parking in parkings)
+            {
+                Console.WriteLine($"ID: {parking.ParkingID}, Местоположение: {parking.Location}, Всички паркоместа: {parking.TotalSpaces}, Свободни места: {parking.AvaliableSpaces}");
+            }
+            Console.ReadLine();
         }
 
         private static void PrintMenu()
@@ -115,14 +119,54 @@ namespace ParkingManagementSystrem
 
         private static void RemoveCar()
         {
-            throw new NotImplementedException();
-            //За Джан
+            Console.Write("Въведете Parking ID: ");
+            int id = int.Parse(Console.ReadLine());
+            var parking = parkings.FirstOrDefault(p => p.ParkingID == id);
+            if (parking == null)
+            {
+                Console.WriteLine("Паркингът не е намерен.");
+                Console.ReadLine();
+                return;
+            }
+            Console.Write("Въведете регистрационния номер на превозното средство:");
+            string vehicle = Console.ReadLine();
+            if (parking.Vehicles.Remove(vehicle))
+            {
+                parking.AvailableSpaces++;
+                SaveParkings();
+                Console.WriteLine("Автомобила напусна паркинга успешно.");
+            }
+            else
+            {
+                Console.WriteLine("Превозното средство не е намерено.");
+            }
+            Console.ReadLine();
         }
 
         private static void AddCar()
         {
-            throw new NotImplementedException();
-            //За Джан
+            Console.Write("Въведете Parking ID: ");
+            int id = int.Parse(Console.ReadLine());
+            var parking = parkings.FirstOrDefault(p => p.ParkingID == id);
+            if (parking == null)
+            {
+                Console.WriteLine("Паркингът не е намерен.");
+                Console.ReadLine();
+                return;
+            }
+            if (parking.AvailableSpaces == 0)
+            {
+                Console.WriteLine("Няма свободни места.");
+                Console.ReadLine();
+                return;
+            }
+            Console.Write("Въведете регистрационния номер на превозното средство:");
+            string vehicle = Console.ReadLine();
+            parking.Vehicles.Add(vehicle);
+            parking.AvailableSpaces--;
+            SaveParkings();
+            Console.WriteLine("Превозното средство е регистрирано успешно.");
+            Console.ReadLine();
         }
 
         private static void ParkingID()
@@ -156,12 +200,6 @@ namespace ParkingManagementSystrem
             }
 
             Console.ReadLine();
-        }
-
-        private static void NewParking()
-        {
-            throw new NotImplementedException();
-            //За Джан
         }
 
         private static void SaveParkings()
@@ -251,10 +289,11 @@ namespace ParkingManagementSystrem
             Console.Write("Въведете общ брой паркоместа: ");
             int totalSpaces = int.Parse(Console.ReadLine());
             Console.WriteLine("Налични палкоместа");
-            Console.Write(totalSpaces);
+            int avaliableSpaces = totalSpaces;
+            Console.Write(avaliableSpaces);
 
             string o = " ";
-            Parking newParking = new Parking(id.ToString(), location, totalSpaces, totalSpaces, o);
+            Parking newParking = new Parking(id.ToString(), location, totalSpaces, avaliableSpaces, o);
             parkings.Add(newParking);
             SaveParkings();
 
@@ -268,9 +307,6 @@ namespace ParkingManagementSystrem
             throw new NotImplementedException();
             //За Джан
         }
-        private static void AllParking()
-        { 
-            throw new NotImplementedException(); 
-        }
+        
     }
 }
