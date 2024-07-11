@@ -19,19 +19,21 @@ namespace ParkingManagementSystrem
             private set
             {
                 if (value <= 0) { throw new ArgumentException("Броят на всички парко места трябва да е положителен!"); }
+                totalSpaces = value;
             }
         }
         public int AvaliableSpaces
         {
             get { return avaliableSpaces; }
-            private set
+            set
             {
-                if (value <= 0) { throw new ArgumentException("Броят на наличните парко места трябва да е положителен!"); }
+                if (value < 0) { throw new ArgumentException("Броят на наличните парко места трябва да е положителен!"); }
+                avaliableSpaces = value;
             }
         }
-        public string Vehicles { get; private set; }
+        public List<string> Vehicles { get; private set; }
 
-        public Parking(string parkingId, string location, int totalSpaces, int avaliableSpaces, string vehicles)
+        public Parking(string parkingId, string location, int totalSpaces, int avaliableSpaces, List<string> vehicles)
         {
             ParkingID = parkingId;
             Location = location;
@@ -41,7 +43,8 @@ namespace ParkingManagementSystrem
         }
         public override string ToString()
         {
-            return $"{ParkingID},{Location},{TotalSpaces},{AvaliableSpaces},{Vehicles}";
+            string vehiclesToString = string.Join(':', Vehicles);
+            return $"{ParkingID},{Location},{TotalSpaces},{AvaliableSpaces},{vehiclesToString}";
         }
         public void DecreaseSeats(int ticketsCount)
         {

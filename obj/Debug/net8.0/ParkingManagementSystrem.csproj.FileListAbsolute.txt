@@ -39,3 +39,17 @@ D:\Other thingies\Programy Thingies\ParkingManagementSystem\obj\Debug\net8.0\ref
 D:\Other thingies\Programy Thingies\ParkingManagementSystem\obj\Debug\net8.0\ParkingManagementSystrem.pdb
 D:\Other thingies\Programy Thingies\ParkingManagementSystem\obj\Debug\net8.0\ParkingManagementSystrem.genruntimeconfig.cache
 D:\Other thingies\Programy Thingies\ParkingManagementSystem\obj\Debug\net8.0\ref\ParkingManagementSystrem.dll
+D:\10g\Влади\flightmanager\bin\Debug\net8.0\ParkingManagementSystrem.exe
+D:\10g\Влади\flightmanager\bin\Debug\net8.0\ParkingManagementSystrem.dll.config
+D:\10g\Влади\flightmanager\bin\Debug\net8.0\ParkingManagementSystrem.deps.json
+D:\10g\Влади\flightmanager\bin\Debug\net8.0\ParkingManagementSystrem.runtimeconfig.json
+D:\10g\Влади\flightmanager\bin\Debug\net8.0\ParkingManagementSystrem.dll
+D:\10g\Влади\flightmanager\bin\Debug\net8.0\ParkingManagementSystrem.pdb
+D:\10g\Влади\flightmanager\obj\Debug\net8.0\ParkingManagementSystrem.GeneratedMSBuildEditorConfig.editorconfig
+D:\10g\Влади\flightmanager\obj\Debug\net8.0\ParkingManagementSystrem.csproj.CoreCompileInputs.cache
+D:\10g\Влади\flightmanager\obj\Debug\net8.0\ParkingManagementSystrem.sourcelink.json
+D:\10g\Влади\flightmanager\obj\Debug\net8.0\ParkingManagementSystrem.dll
+D:\10g\Влади\flightmanager\obj\Debug\net8.0\refint\ParkingManagementSystrem.dll
+D:\10g\Влади\flightmanager\obj\Debug\net8.0\ParkingManagementSystrem.pdb
+D:\10g\Влади\flightmanager\obj\Debug\net8.0\ParkingManagementSystrem.genruntimeconfig.cache
+D:\10g\Влади\flightmanager\obj\Debug\net8.0\ref\ParkingManagementSystrem.dll
