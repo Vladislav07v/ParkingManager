@@ -300,13 +300,6 @@ namespace ParkingManagementSystrem
             Console.WriteLine("Новият паркинг е добавен успешно.");
             Console.ReadLine();
             
-        }
-
-        private static void SearchParking()
-        {
-            throw new NotImplementedException();
-            //За Джан
-        }
-        
+        }       
     }
 }
